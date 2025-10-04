@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Order Success</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">LIA COLLECTIONS</h1>
+      <p class="tagline">IGNITING THE NEW FLAME</p>
+    </div>
+  </header>
+  <main style="max-width:700px;margin:40px auto;padding:12px;background:var(--white);border-radius:8px">
+    <h2>Thank you — Order received!</h2>
+    <p id="msg">Processing your order...</p>
+    <p><a href="index.html">Back to shop</a></p>
+  </main>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const name = params.get('name') || '';
+    const email = params.get('email') || '';
+    document.getElementById('msg').textContent = `Hi ${name}! We sent an order confirmation to ${email}. This is a sandbox checkout.`;
+  </script>
+</body></html>

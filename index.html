@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LIA Collections</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">LIA COLLECTIONS</h1>
+      <p class="tagline">IGNITING THE NEW FLAME</p>
+      <button id="open-cart" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <nav class="nav">
+      <button class="nav-btn" data-filter="all">All</button>
+      <button class="nav-btn" data-filter="collections">Collections</button>
+      <button class="nav-btn" data-filter="legends">Legends</button>
+      <button class="nav-btn" data-filter="accessories">Accessories</button>
+      <label class="preorder-filter"><input type="checkbox" id="preorder-only"> Pre-order only</label>
+    </nav>
+
+    <section id="products" class="products-grid"></section>
+  </main>
+
+  <aside id="cart" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart" class="close-cart">Close</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: R <span id="cart-total">0.00</span></div>
+      <input id="customer-name" placeholder="Your name" />
+      <input id="customer-email" placeholder="Email" />
+      <button id="checkout-btn" class="checkout-btn">Checkout (Sandbox)</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h3>LIA FOUNDATION DATABASE</h3>
+      <p><strong>Director:</strong> Rosina Fielies</p>
+      <p><strong>Cell:</strong> 084 494 7393</p>
+      <p><strong>Email:</strong> rfielies1@outlook.com</p>
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
